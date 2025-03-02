@@ -1,8 +1,11 @@
 {
-  "// example app config": "",
   "footer": {
     "otherInfo": {
-      "date": "2020-{{now}}"
+      "date": "2020-{{now}}",
+      "icp": {
+        "text": "萌 ICP 备 20236136 号",
+        "link": "https://icp.gov.moe/?keyword=20236136"
+      }
     },
     "linkSections": [
       {
@@ -14,12 +17,7 @@
           },
           {
             "name": "关于我",
-            "href": "/about-me"
-          },
-          {
-            "name": "关于此项目",
-            "href": "https://github.com/innei/Shiro",
-            "external": true
+            "href": "/about"
           }
         ]
       },
@@ -33,11 +31,6 @@
           {
             "name": "友链",
             "href": "/friends"
-          },
-          {
-            "name": "监控",
-            "href": "https://status.shizuri.net/status/main",
-            "external": true
           }
         ]
       },
@@ -49,13 +42,8 @@
             "href": "/message"
           },
           {
-            "name": "发邮件",
-            "href": "mailto:i@innei.ren",
-            "external": true
-          },
-          {
             "name": "GitHub",
-            "href": "https://github.com/innei",
+            "href": "Groux0705",
             "external": true
           }
         ]
@@ -63,6 +51,30 @@
     ]
   },
   "config": {
+    "color": {
+      "light": [
+        "#33A6B8",
+        "#FF6666",
+        "#26A69A",
+        "#fb7287",
+        "#69a6cc",
+        "#F11A7B",
+        "#78C1F3",
+        "#FF6666",
+        "#7ACDF6"
+      ],
+      "dark": [
+        "#F596AA",
+        "#A0A7D4",
+        "#ff7b7b",
+        "#99D8CF",
+        "#838BC6",
+        "#FFE5AD",
+        "#9BE8D8",
+        "#A1CCD1",
+        "#EAAEBA"
+      ]
+    },
     "bg": [
       "https://github.com/Innei/static/blob/master/images/F0q8mwwaIAEtird.jpeg?raw=true",
       "https://github.com/Innei/static/blob/master/images/IMG_2111.jpeg.webp.jpg?raw=true"
@@ -74,8 +86,8 @@
       "scripts": []
     },
     "site": {
-      "favicon": "/innei.svg",
-      "faviconDark": "/innei-dark.svg"
+      "favicon": "/groux.svg",
+      "faviconDark": "/groux.svg"
     },
     "hero": {
       "title": {
@@ -87,7 +99,7 @@
           },
           {
             "type": "h1",
-            "text": "Innei",
+            "text": "Groux",
             "class": "font-medium mx-2 text-4xl"
           },
           {
@@ -114,19 +126,12 @@
           }
         ]
       },
-      "description": "An independent developer coding with love."
+      "description": "Diving deep into the fields of AI and Web3."
     },
     "module": {
-      "donate": {
+      "activity": {
         "enable": true,
-        "link": "https://afdian.net/@Innei",
-        "qrcode": [
-          "https://cdn.jsdelivr.net/gh/Innei/img-bed@master/20191211132347.png",
-          "https://cdn.innei.ren/bed/2023/0424213144.png"
-        ]
-      },
-      "bilibili": {
-        "liveId": 1434499
+        "endpoint": "/fn/ps/update"
       }
     }
   }
